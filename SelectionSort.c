@@ -2,11 +2,11 @@
 #include<stdlib.h>
 
 
-void selectionsort(int dizi[], int eleman_sayýsý){
+void selectionsort(int dizi[], int numberOfElements){
 	int min, temp, i, j;
-	for (i = 0; i < eleman_sayýsý; i++){
+	for (i = 0; i < numberOfElements; i++){
 		min = i;
-		for (j = i + 1; j <= eleman_sayýsý; j++){
+		for (j = i + 1; j <= numberOfElements; j++){
 			if (dizi[j] < dizi[min])
 				min = j;
 		}
